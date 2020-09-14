@@ -1,0 +1,25 @@
+{
+  "name": "sampleproject",
+  "version": "0.0.1",
+  "description": "A sample CRUD application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon -L app.js -i mockDatabases",
+    "test": "echo No tests to run"
+  },
+  "author": "William Kersting",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "app-root-path": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,12 @@
+# Node Modules
+node_modules
+
+# Logs
+logs/
+*.log
+
+# Environment Variables file
+.env
+
+# Linter
+.eslintrc.json

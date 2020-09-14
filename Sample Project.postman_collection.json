@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "304b91f1-7ab4-4b39-9117-92117bf12d7d",
+		"name": "Sample Project",
+		"description": "Collection of all API endpoints from Sample Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/people",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"people"
+					]
+				},
+				"description": "Gets a list of all people in the people database"
+			},
+			"response": []
+		},
+		{
+			"name": "Get person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/people/person/b0646cbb-0482-431c-a1ac-6dd5305a8955",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"people",
+						"person",
+						"b0646cbb-0482-431c-a1ac-6dd5305a8955"
+					]
+				},
+				"description": "Gets a person object with a provided person ID"
+			},
+			"response": []
+		},
+		{
+			"name": "New Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Foo\",\r\n    \"lastName\": \"Bar\",\r\n    \"height\": 72,\r\n    \"favoriteColor\": \"red\",\r\n    \"email\": \"foobar@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/people/person",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"people",
+						"person"
+					]
+				},
+				"description": "Create a new person"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Person",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/people/person/a427101b-06e2-4223-92b8-c86cbfcbd75c",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"people",
+						"person",
+						"a427101b-06e2-4223-92b8-c86cbfcbd75c"
+					]
+				},
+				"description": "Removes a person based on given id"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"b0646cbb-0482-431c-a1ac-6dd5305a8955\",\r\n    \"firstName\": \"William\",\r\n    \"lastName\": \"Kersting\",\r\n    \"height\": 72,\r\n    \"favoriteColor\": \"green\",\r\n    \"email\": \"wtkersting@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/people/person/b0646cbb-0482-431c-a1ac-6dd5305a8955",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"people",
+						"person",
+						"b0646cbb-0482-431c-a1ac-6dd5305a8955"
+					]
+				},
+				"description": "Updates a person"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "81b9d46b-486d-42c7-968b-fa6785ca4052",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "32b92be6-e90f-4b7c-944d-335d9d2798c0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
